@@ -31,6 +31,5 @@ RUN pip3 install vyper
 
 COPY --from=built /parity-ethereum/target/release/parity /usr/local/bin/parity
 WORKDIR /
-RUN git clone https://github.com/whiteblock/solc_resources.git
 
 ENTRYPOINT ["/bin/bash"]
